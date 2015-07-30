@@ -1,0 +1,20 @@
+
+
+// Use function expression format
+
+var functionName = function(argument) {
+  // Code here
+}
+
+functionName(parameter);
+
+// Return
+
+If you use a "return" it will quit the function. Any code after that will not execute.
+
+// Variable scope
+
+A variable declared outside a function is global.
+
+A global variable will have scope inside a fuction, but local variables (inside a function) will not be visible to other functions.
+

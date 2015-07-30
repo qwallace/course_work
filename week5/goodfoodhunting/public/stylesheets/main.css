@@ -1,0 +1,30 @@
+
+
+html { 
+  background: url(http://cambridge.com/wp-content/uploads/2014/08/51a486a70d5e790133.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+a {
+  color: white;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+  border-radius: 3%;
+}

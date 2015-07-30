@@ -1,0 +1,23 @@
+
+Inline
+
+Only takes up as much space as the content.
+
+eg <a>
+
+Block
+
+Takes up full width of the parent element
+
+eg <div>, <p>, <li>
+
+Inline-block
+
+Inherits both of inline and block
+
+eg <li> in menu
+
+Mkes <li> on same line, but also allows you to manage the padding etc which would normally be mandated by the content when inline.
+
+None
+

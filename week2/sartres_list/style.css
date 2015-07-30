@@ -1,0 +1,69 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+     font-family: 'Yantramanav', sans-serif;
+}
+
+div {
+     border: 1px dashed black;
+}
+
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+.nav > li {
+     display: inline;
+}
+
+.footer > li {
+     display: inline;
+}
+
+.main {
+     display: inline-block;
+     width: 48%
+}
+
+.side {
+     display: inline-block;
+     width: 48%;
+     vertical-align: top;
+}
+
+h1 {
+     color: #EE3B3B;
+}
+
+.card > img {
+     width: 100%;
+}
+
+.footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+}
+
+.footer li {
+     display: inline;
+}

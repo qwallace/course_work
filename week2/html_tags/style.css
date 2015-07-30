@@ -1,0 +1,70 @@
+
+html { /* Next 2 rules applied for when you using multiple style sheets like bootstrap*/
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+p {
+
+}
+
+div p, #id, .class {
+
+}
+
+a[attr] { /* attr = atribute eg "href" */
+
+}
+
+/* example of attr below */
+
+a[href="#about"] {
+  background-color: yellow;
+}
+
+/* All decendents */
+
+div p
+
+/* Child Selector */
+
+div > p {
+
+}
+
+/* Sibling selector */
+
+li:first-of-type + li {
+  background-color: red;
+}
+
+
+.foo + p {
+  color: red;
+}
+
+.foo:hover {
+  background-color: pink;
+}
+
+div > p {
+  background-color: pink;
+  padding: 30px;
+  margin: 20px;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box; /* Makes box size the total width and height inlcuding padding and border. */
+}
+
+/* display */
+
+/* inline, block, inline-block and none */
+
+ul > li.nav {
+  display: inline-block;
+  width: 200px;
+}

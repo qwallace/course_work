@@ -1,0 +1,92 @@
+
+body {
+  font-family: helvetica;
+  color: #222;
+  width: 100%;
+  margin: 0;  
+}
+
+header {
+      text-align: center;
+      background: url('742_evergreen_terrace.png');
+      background-size: cover;
+      color: #EEE;
+    }
+
+nav {
+  height: 50px;
+  background-color: rgba(40,40,40,0.8);
+}
+
+nav a {
+  display: inline-block;
+  margin: 15px 20px 0px 20px;
+  border: 1px dashed red; 
+}
+
+footer {
+  text-align: center;
+  color: #222;
+}
+
+a {
+  color: #EEE;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF78FF;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 40px;
+  margin: 10px 0px 5px 0px;
+  text-shadow: 2px 2px #000;
+}
+
+h2 {
+  font-family: Georgia;
+  color: #222;
+}
+
+.avatar {
+  margin: 40px 0px 0px 0px;
+  border: 2px solid #EEE;
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+.title {
+  color: #EEE;
+  margin: 5px 0px 5px 0px;
+  font-size: 18px;
+  text-shadow: 1px 1px #000;
+}
+
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+article p {
+  text-align: justify;
+}
+
+.email {
+  color: #222;
+}
+
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;  
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,14 @@
+
+
+body {
+  background-color: yellow;
+}
+
+.container {
+  margin: auto;
+  max-width: 600px;
+}
+
+label {
+  background-color: red;
+}

@@ -1,0 +1,54 @@
+
+body {
+  margin: 0 auto;
+  max-width: 900px;
+  color: white;
+}
+
+.span-1, .span-2, .span-3 {
+  min-height: 100px;
+  float: left;
+  margin-left: 0.55555556%;
+  margin-right: 0.55555556%; /* 1.11111111 10px 0.55555556 5px */
+  margin-bottom: 10px;
+  width: 98.8888889%; /* 98.8888889  890px */
+}
+
+.span-1 {
+  background-color: red;
+  /* width: 32.2222222%; /* 32.2222222 290px */
+}
+
+.span-2 {
+  background-color: blue;
+  /* width: 65.5555556%; /* 65.5555556 590px */
+}
+
+.span-3 {
+  background-color: green;
+  width: 98.8888889%;
+}
+
+img {
+  float: left;
+  max-width: 100%
+}
+
+@media all and (min-width: 600px) {
+  
+  .span-1 {
+    width: 32.2222222%;
+  }
+
+  .span-2 {
+    width: 65.5555556%;
+  }
+
+}
+
+@media all and (min-width: 800px) {
+
+  body {
+    font-size: 1.5em;
+  }
+}

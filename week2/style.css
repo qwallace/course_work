@@ -1,0 +1,27 @@
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+  /*visibility: hidden; or can use visible */
+}
+
+.showInline {
+  /* display: block; */
+}
+
+.showBlock {
+  display: block;
+}
+
+.showInlineBlock {
+  display: inline-block;
+  width: 50%;
+}

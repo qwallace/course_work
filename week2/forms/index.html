@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="forms.js"></script>
+  <title>Forms</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>HTML5 Form Inputs Examples</h1>
+
+    <div id="testDiv"></div>
+
+
+    <form action="/destination">
+      <p>
+        <label for="query">Things to search for</label>
+        <input type="search" name="query" id="query" placeholder="hotdogs">
+      </p>
+
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="viiminds">
+      </p>
+
+      <p>
+        <label for="age">age:</label>
+        <input type="number" name="age" id="age" placeholder="62">
+      </p>
+
+      <p>
+        <label for="myspace_page">myspace page:</label>
+        <input type="url" name="myspace_page" id="myspace_page" placeholder="url">
+      </p>
+
+      <p>
+        <label for="address">Address:</label>
+        <input type="address" name="address" id="address" placeholder="address">
+      </p>
+
+      <p>
+        <label for="file">Avatar:</label>
+        <input type="file" name="avatar" id="avatar">
+      </p>
+
+      <p>
+        <label for="letter_home">Letter to home:</label>
+        <textarea name="letter_home" id="letter_home" placeholder="Dear Mum and Dad"></textarea>
+      </p>
+
+      <p>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+      </p>
+
+      <p>
+        Select your vices:
+        <label for="cigars">Cigars</label>
+        <input type="checkbox" id="cigars" name="vices" value="cigars">
+        <label for="bourbon">Bourbon</label>
+        <input type="checkbox" id="bourbon" name="vices" value="bourbon">
+        <label for="beer">Beer</label>
+        <input type="checkbox" id="beer" name="vices" value="beer">
+      </p>
+
+      <p>
+        Select your favourite vice:
+        <label for="fav-vice">Favourite vice</label>
+        <select name="fav-vice" id="fav-vice">
+          <option value="cigars">Cigars</option>
+          <option value="bourbon">Bourbon</option>
+          <option value="beer">Beer</option>
+        </select>
+      </p>
+
+      <button>Submit</button>
+
+    </form>
+
+  </div>
+
+  
+</body>
+</html>

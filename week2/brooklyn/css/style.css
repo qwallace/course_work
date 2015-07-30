@@ -1,0 +1,93 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-color: #656565;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: #5E96FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #20222a;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+  color: #6D6D6D;
+}
+
+#logo {
+  display: block;
+  margin: 20px 0px 10px 0px;
+
+}
+
+.date {
+  color: #5E96FF;
+}
+
+/*
+.pressImg {
+  border: 3px solid #ccc;
+  padding: 1px;
+  margin: 0px 5px 0px 0px;
+}
+*/
+
+#footer {
+  padding: 0;
+}
+
+.pressImg{
+  border: 3px solid #ccc;
+  padding: 1px;
+  float: left;
+  width: 24.25%
+  font-size: 0;
+  margin-right: 1%;
+}
+
+#lastChild {
+  margin-right: 0%;
+}
+
+@media (max-width: 500px) {
+      .pressImg {
+        display: block;
+        margin: 0px 0px 5px 0px;  
+      }
+      #coverImages > img {
+        width: 500px;
+      }
+}

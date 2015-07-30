@@ -1,0 +1,110 @@
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-family: helvetica; sans-serif;
+
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+
+}
+
+div {
+  border: 1px dashed black;
+}
+
+img {
+  width: 450px;
+  height: 100px;
+  border: 1px dashed red;
+
+}
+
+h1 {
+  width: 300px;
+  float: right;
+  text-align: center;
+  border: 1px dashed black;
+  margin-right: 38%;
+}
+
+p {
+  border: 1px dashed black;
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+}
+
+
+.savingsDiv {
+  display: inline-block;
+  width: 45%;
+  height: 400px;
+  margin-right: 9%;
+  background-color: yellow;
+  padding: 0;
+}
+
+.checkingDiv {
+  display: inline-block;
+  width: 45%;
+  height: 400px;
+  margin-right: 0;
+  background-color: lime;
+  padding: 0;
+}
+
+label {
+  display: none;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+button {
+  display: inline-block;
+  width: 25%;
+  margin-top: 20px;
+
+}
+
+.withdraw {
+  margin-left: 24%;
+  margin-right: 0;
+}
+
+.deposit {
+  margin-left: 0;
+  margin-right: 24%
+}

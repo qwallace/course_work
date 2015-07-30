@@ -1,0 +1,11 @@
+*** Absolute ***
+
+px - pixels
+
+*** Relative ***
+
+em - emphasis relative to font size
+
+pt - 
+
+% - percentage - relative to parent

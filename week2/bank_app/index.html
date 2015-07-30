@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="bank.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Valley Bank</title>
+</head>
+<body>
+
+  <header>
+    <img src="https://www.myvalleybank.com/images/Current_Valley_Bank_Logo_(2).jpg" alt="">
+    <h1>Online Bank</h1>
+  </header>
+
+  <div class="container">
+
+
+    <div class="savingsDiv">
+      <p>SAVINGS</p>
+      <p>YOUR BALANCE IS...</p>
+      <p id="savingsBalance">$00.00</p>
+      <form action="/destination">
+        <label for="savings">age:</label>
+        <input type="number" name="savings" id="savings" placeholder="Enter amount">
+        <button class="withdraw" id="savWithdraw">WITHDRAW</button>
+        <button class="deposit" id="savDeposit">DEPOSIT</button>
+      </form>
+    </div>
+
+    <div class="checkingDiv">
+      <p>CHECKING</p>
+      <p>YOUR BALANCE IS...</p>
+      <p id="checkingBalance">$00.00</p>
+      <form action="/destination">
+        <label for="checking">age:</label>
+        <input type="number" name="checking" id="checking" placeholder="Enter amount">
+        <button class="withdraw" id="checkWithdraw">WITHDRAW</button>
+        <button class="deposit" id="checkDeposit">DEPOSIT</button>
+      </form>
+    </div>
+
+  </div>
+  
+</body>
+</html>
