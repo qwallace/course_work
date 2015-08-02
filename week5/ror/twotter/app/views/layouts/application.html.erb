@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twotter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if logged_in? %>
+
+  <p>Logged in as: <%= current_user.email %></p>
+  <%= form_tag '/logout', method: :delete do %>
+    <button>Logout</button>
+  <% end %>
+
+<% else %>
+
+  <%= link_to 'login', '/login' %>
+
+<% end %>
+
+<%= render 'shared/menu' %>
+
+<%= yield %>
+
+</body>
+</html>

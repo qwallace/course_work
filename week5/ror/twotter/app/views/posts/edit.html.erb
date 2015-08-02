@@ -1,7 +1,7 @@
 
 <h2>Edit Post Page</h2>
 
-<form action="/posts/<%= @post['id'] %>" method="post">
+<!-- <form action="/posts/<%= @post['id'] %>" method="post">
   <input type="hidden" name="_method" value="put">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <p>
@@ -16,4 +16,19 @@
 
   <button>Update</button>
 
-</form>
+</form> -->
+
+
+<!-- Could use @post below instead of :post. It's for the object not from method -->
+
+<%= form_for :post do |f| %>
+
+  <%= f.label :title, 'Title' %>
+  <%= f.text_field :title %>
+
+  <%= f.label 'Body' %>
+  <%= f.text_field :body %>
+
+  <button>Update</button>
+
+<% end %>
