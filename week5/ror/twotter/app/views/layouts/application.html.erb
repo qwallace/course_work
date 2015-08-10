@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<%= flash[:info] %>
+
 <% if logged_in? %>
 
   <p>Logged in as: <%= current_user.email %></p>

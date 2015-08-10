@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
 
+  before_action :authenticate :except => [:show, :index] # alternative: :only => [:show]
+
   def index
+    # are you logged in
     @posts = Post.all
   end
 
@@ -36,6 +39,9 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find params[:id]
+
+    redirect_to '/no_access' unless @post.can_delete?(current_user)
+
     @post.destroy
     redirect_to '/posts'
   end

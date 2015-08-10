@@ -18,7 +18,9 @@
 <% @posts.each do |post| %>
   <h3>
     <%= link_to post.title, edit_post_path(post) %>
+    <% if can_delete?(current_user) %>
     <%= link_to 'Delete', post_path(post), :method => :delete, class: 'dangerous', data: { confirm: 'Really?'} %>
+    <% end %>
   </h3>
   <p><%= post.body %></p>
 <% end %>
