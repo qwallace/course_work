@@ -1,0 +1,127 @@
+/* Colors
+
+Green - #1ECD97
+
+Grey - #62706c
+
+Medium Grey - #ccc
+
+Light Grey - #f9f9f9
+
+*/
+
+
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  background-color: #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+div.container {
+  padding: 2em;
+  /*border: 1px dashed black;*/
+}
+
+h1.logo {
+  font-size: 2em;
+  color: #62706c;
+  transition: .5s;
+}
+
+h1.logo:hover {
+  color: #1ECD97;
+}
+
+span {
+  color: #1ECD97;
+}
+
+div.dish {
+  background-color: #f9f9f9;
+  /*height: 350px;
+  width: 250px;*/
+  float: left;
+  display: inline-block;
+  margin-bottom: 3%;
+  border-radius: 0.5em;
+  position: relative;
+  transition: .3s;
+}
+
+.dish:hover {
+  transform: translateY(0.3em);
+}
+
+.dish img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dish p {
+  /*border: 1px dashed black;*/
+  margin: 5px 5px 5px 5px;
+}
+
+p.dish-stars {
+  margin-top: 15px;
+}
+
+p.dish-name {
+  font-size: 1.2em;
+  color: #1ECD97;
+}
+
+p.dish-venue {
+  color: #62706c;
+}
+
+p.dish-stars {
+  color: #ccc;
+}
+
+i.fa-star {
+  position: absolute;
+  font-size: 2em;
+  top: 3%;
+  right: 4%;
+  color: #1ECD97;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.fa-star:hover {
+  color: yellow;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+div.dish:hover .fa-star {
+  visibility: visible;
+}
+
+@media (min-width: 36em) {
+
+  div.dish {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+}
+
+@media (min-width: 66em) {
+
+  div.dish {
+    width: 23%;
+  }
+
+}
