@@ -1,0 +1,38 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "reset";
+
+
+$color-primary: aqua;
+$color-secondary: #ccc;
+$color-tertiary: pink;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); }
+}
+
+body {
+  background-color: $color-primary;
+}
+
+.todo-item {
+  background-color: $color-secondary;
+
+  h2 {
+    background-color: $color-tertiary;
+    @include border-radius(5px);
+  }
+
+  p {
+    background-color: darken(yellow, 10%);
+    @include border-radius(20px);
+  }
+}

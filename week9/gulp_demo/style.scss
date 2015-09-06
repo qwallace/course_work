@@ -1,0 +1,9 @@
+
+$primary-color: aqua;
+$text-color: grey;
+
+body {
+  /*background: $primary-color;*/
+  background: linear-gradient(135deg, red, blue);
+  color: $text-color;
+}

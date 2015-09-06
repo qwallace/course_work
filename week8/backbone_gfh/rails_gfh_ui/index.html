@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="public/js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="public/js/handlebars.js"></script>
+  <script type="text/javascript" src="public/js/underscore.js"></script>
+  <script type="text/javascript" src="public/js/backbone.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <nav>
+
+    <a href="file:///Users/Q/wdi/course_work/week8/backbone_gfh/rails_gfh_ui/index.html"><h1 class="logo"><span>Bacon</span>Hunting</h1></a>
+
+  </nav>
+
+  <form action="/dishes" method="post">
+    <input type="text" name="name" id="input-dish-name" placeholder="Dish name...">
+    <input type="text" name="image_url" id="input-dish-url" placeholder="Image url...">
+    <button>Add dish</button>
+  </form>
+
+  <div id="container">
+
+  </div>
+
+  <script id="dish-item-template" type="text/x-handlebars-template">
+
+    <img src="{{ image_url }}">
+    <a href="#dish/{{ id }}"><p class="dish-name">{{ name }}</p></a>
+    <p class="dish-venue">Venue name</p>
+    <p class="dish-stars">Stars: {{ star_count }}</p>
+    <i class="fa fa-star"></i>
+
+  </script>
+
+  <script id="dish-view-template" type="text/x-handlebars-template">
+
+    <h2 class="dish-title">{{ name }}</h2><i class="fa fa-star"></i>
+    <img src="{{ image_url }}">
+    <p class="dish-venue">Venue name</p>
+    <p class="dish-stars">Stars: {{ star_count }}</p>
+    <p class="comments">Bacon ipsum dolor amet short ribs prosciutto shank frankfurter. Alcatra cow kevin frankfurter shank, meatloaf brisket. Bresaola pastrami sirloin, bacon ribeye ham rump boudin drumstick kevin capicola turducken pig meatloaf. Shoulder brisket sirloin ham hock.</p>
+
+  </script>
+
+  <script type="text/javascript" src="public/js/Dish.js"></script>
+  <script type="text/javascript" src="public/js/Dishes.js"></script>
+  <script type="text/javascript" src="public/js/DishItemView.js"></script>
+  <script type="text/javascript" src="public/js/DishListView.js"></script>
+  <script type="text/javascript" src="public/js/DishView.js"></script>
+  <script type="text/javascript" src="public/js/routes.js"></script>
+  <script type="text/javascript" src="public/js/app.js"></script>
+</body>
+</html>
